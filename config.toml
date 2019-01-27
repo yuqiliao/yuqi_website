@@ -43,18 +43,19 @@ relativeurls = true
   email = "yuqi.liao@georgetown.edu"
 
   # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Home"
-  url = "portfolio/"
-  home = true
-
+  #[[params.navlinks]]
+  #name = "Home"
+  #url = "portfolio/"
+  #home = true
+   
   [[params.navlinks]]
   name = "About"
   url = "about/"
 
   [[params.navlinks]]
-  name = "Post"
-  url = "post/"
+  name = "Blog"
+  url = "blog/"
+  home = true
   
   [[params.navlinks]]
   name = "Get in touch"
