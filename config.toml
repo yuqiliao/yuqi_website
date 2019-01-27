@@ -1,4 +1,4 @@
-baseurl = "https://www.yuqiliao.com/"
+baseurl = "/"
 title = "YUQI LIAO"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"
@@ -44,6 +44,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   name = "About"
   url = "about/"
 
+  [[params.navlinks]]
+  name = "Post"
+  url = "post/"
+  
   [[params.navlinks]]
   name = "Get in touch"
   url = "contact/"
