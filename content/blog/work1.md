@@ -1,6 +1,6 @@
 ---
 date: "2016-11-05T18:25:22+05:30"
-draft: false
+draft: true
 image: img/portfolio/a4-paper.jpg
 showonlyimage: true
 title: Name of the work 1
