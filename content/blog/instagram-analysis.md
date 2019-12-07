@@ -1,8 +1,8 @@
 ---
 author: "Yuqi Liao"
 date: 2018-10-31
-linktitle: Instagram @WeThePeopleDC - Part 1
-title: Instagram @WeThePeopleDC - Part 1
+linktitle: Instagram @WeThePeopleDC
+title: Instagram @WeThePeopleDC
 highlight: true
 image: img/blog/points_edit.png
 showonlyimage: true
