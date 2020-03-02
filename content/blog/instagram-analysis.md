@@ -153,5 +153,5 @@ I also created an area map to make the visualization and the takeaway cleaner. T
 
 This finding, however, does not mean that future handle holders should just post more pictures in places less represented to make the whole thing evenly distributed. It’s more of a reminder to us that there are many places no reached and stories untold even though @WeThePeopleDC as a platform is trying its best to engage Washingtonians.
 
-## **What's Next**
-Coming up, I plan on presenting the result of text analyses on the tags, captions, and comments of the database. What is the most used tags, the most used word or emoji, and the most common topic among these texts? Please stay tuned. Special thanks to [Sifan](https://twitter.com/Sifan_Liu), [Trang](https://github.com/nguyentr17), and [Pablo](https://twitter.com/p_barbera) for inspiration and technical support for this post. Comments and new ideas for posts are all welcome!
+## **Credits**
+Special thanks to [Sifan](https://twitter.com/Sifan_Liu), [Trang](https://github.com/nguyentr17), and [Pablo](https://twitter.com/p_barbera) for inspiration and technical support for this post. Comments and new ideas for posts are all welcome!
