@@ -177,7 +177,8 @@ https://pudding.cool/process/introducing-scrollama/ */
 h1 {
     font-family: "Open Sans ExtraBoldItalic";
     font-size: 44px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     color:#1C366B;
 }
 
@@ -213,6 +214,16 @@ p {
     font-size: 16px;
     line-height: 30px;
 }
+
+.homeButton{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+
 
 .author{
     color:#1C366B;
@@ -262,6 +273,14 @@ p {
     height: auto;
     margin: auto;
     display: block;
+}
+
+.footnoteLine{
+    width: 30%;
+    margin: 0px;
+    border: 1px solid black;
+    background: black
+
 }
 
 /* hyperlinks */
