@@ -24,7 +24,7 @@ function drawRangeChartB(data, response) {
     /// draw most of the elements 5 times
     var moduleVars = [{"en11madz": "Mars"}, 
                       {"en11radz": "Rainforests"},
-                      {"en11badz": "Dr Blackwell"},
+                      {"en11badz": "Dr. Blackwell"},
                       {"en11zadz": "Wildebeest Migration"}, 
                       {"en11tadz": "The Legend of Troy"}];
 
@@ -62,7 +62,7 @@ function drawRangeChartB(data, response) {
 
     // chart title
     header.selectAll(".chartTitle")
-        .data([{"label": "Minimun and maximun number of ad-clicks by module and education system"}])
+        .data([{"label": "Minimum and maximum number of ad-clicks by module and education system"}])
         .text(function(d) {return d.label;})
 
     /******************
@@ -193,7 +193,7 @@ function drawRangeChartB(data, response) {
                     .style("stroke", "#F24D29");
                 
                 div.style("opacity", 1)
-                    .html("<strong>Minimun</strong>: "+ d["Min"])
+                    .html("<strong>Minimum</strong>: "+ d["Min"])
                     .style("left", (xScale(d["Min"]) + 86) + "px")
                     .style("top", (yScale(d[yGroup]) + yScale.bandwidth()/2) + "px")
                 })              
@@ -232,7 +232,7 @@ function drawRangeChartB(data, response) {
                 
                 div.style("opacity", 1)
                     //.text([d["Max"]])
-                    .html("<strong>Maximun</strong>: "+ d["Max"])
+                    .html("<strong>Maximum</strong>: "+ d["Max"])
                     .style("left", (xScale(d["Max"]) + 79) + "px")
                     .style("top", (yScale(d[yGroup]) + yScale.bandwidth()/2) + "px")
                 })              

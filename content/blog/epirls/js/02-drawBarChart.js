@@ -25,7 +25,7 @@ function drawBarChart(data, response) {
     /// draw most of the elements 5 times
     var moduleVars = [{"en11madz": "Mars"}, 
                       {"en11radz": "Rainforests"},
-                      {"en11badz": "Dr Blackwell"},
+                      {"en11badz": "Dr. Blackwell"},
                       {"en11zadz": "Wildebeest Migration"}, 
                       {"en11tadz": "The Legend of Troy"}];
 

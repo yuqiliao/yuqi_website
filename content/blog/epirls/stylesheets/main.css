@@ -86,7 +86,7 @@ body {
 
 #intro,
 #outro {
-    width: 50%;
+    width: 42%;
     height: auto;
     margin: auto;
     /*padding: 0px 200px 0px 200px;*/
@@ -210,8 +210,8 @@ h4 {
 
 /* Body text */
 p {
-    font-family: "Open Sans SemiBold";
-    font-size: 16px;
+    font-family: "Open Sans";
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -232,13 +232,13 @@ p {
 .listResearchQuestions,
 .listFindings {
     font-family: "Open Sans SemiBold";
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8em;
 }
 
 .textHighlight{
     font-family: "Open Sans Bold";
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /*imagies and video*/ 

@@ -25,7 +25,7 @@ function drawRangeChart(data, response) {
     /// draw most of the elements 5 times
     var moduleVars = [{"en11madz": "Mars"}, 
                       {"en11radz": "Rainforests"},
-                      {"en11badz": "Dr Blackwell"},
+                      {"en11badz": "Dr. Blackwell"},
                       {"en11zadz": "Wildebeest Migration"}, 
                       {"en11tadz": "The Legend of Troy"}];
 
@@ -111,7 +111,7 @@ function drawRangeChart(data, response) {
 
     // chart title
     header.selectAll(".chartTitle")
-        .data([{"label": "Minimun and maximun number of ad-clicks by module and education system"}])
+        .data([{"label": "Minimum and maximum number of ad-clicks by module and education system"}])
         .enter()
         .append("text")
         .text(function(d) {return d.label;})
