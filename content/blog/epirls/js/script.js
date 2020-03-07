@@ -176,6 +176,7 @@ function scroll_init() {
 	window.addEventListener('resize', handleResize);
 }
 
+
 // LOAD DATA
 Promise.all([
     d3.json("data/data1"),

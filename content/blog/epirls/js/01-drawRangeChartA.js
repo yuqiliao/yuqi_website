@@ -60,24 +60,6 @@ function drawRangeChartA(data, response) {
     let filteredXTitle = [moduleVars[i]]
 
 
-    svg.selectAll(".xTitle")
-        .data(moduleVars)
-        .enter()
-        .append("text")
-        .attr("class", "xTitle")
-        //.attr("transform", `translate(${margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10}, ${margin.top })`)
-        .attr("text-anchor", "start")
-        .attr("x", (d,i) => margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10)
-        .attr("y", margin.top)
-        .style("font-family", "sans-serif")
-        .style("font-size", 12)
-        .style("opacity", 0)
-        .text(function(d) { 
-            return Object.values(d); 
-            })
-        .transition()
-        .duration(DURATION * 0.5)
-            .style("opacity", 1)
 
     /***************************************
     ***** Y AXIS, AXIS LABEL, GRIDLINE *****
@@ -112,16 +94,8 @@ function drawRangeChartA(data, response) {
     // chart title
     header.selectAll(".chartTitle")
         .data([{"label": "Minimum and maximum number of ad-clicks by module and education system"}])
-        .enter()
-        .append("text")
         .text(function(d) {return d.label;})
-        .attr("x", margin.left + smallMultiplePadding)
-        .attr("y", margin.top - 30)
-        .attr("text-anchor", "start")
-        .attr("class", "chartTitle")
-        .style("font-family", "sans-serif")
-        .style("font-weight", "bold")
-        .style("font-size", 20)
+
 
     // Create footer grouping
     const footer = svg.select("#footer");

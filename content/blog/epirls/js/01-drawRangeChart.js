@@ -54,7 +54,8 @@ function drawRangeChart(data, response) {
 
     svg.selectAll(".xLabel")
         .data([{"label": "Number of ad clicks"}])
-        .text(d => d.label);
+        .text(d => d.label)
+        .style("font-size", plotWidth/50);
 
 
     let filteredXTitle = [moduleVars[i]]
@@ -67,10 +68,10 @@ function drawRangeChart(data, response) {
         .attr("class", "xTitle")
         //.attr("transform", `translate(${margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10}, ${margin.top })`)
         .attr("text-anchor", "start")
-        .attr("x", (d,i) => margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10)
+        .attr("x", (d,i) => margin.left + smallMultiplePadding +  smallMultipleWidth * i )
         .attr("y", margin.top)
         .style("font-family", "sans-serif")
-        .style("font-size", 12)
+        .style("font-size", plotWidth/50)
         .style("opacity", 0)
         .text(function(d) { 
             return Object.values(d); 
@@ -121,7 +122,8 @@ function drawRangeChart(data, response) {
         .attr("class", "chartTitle")
         .style("font-family", "sans-serif")
         .style("font-weight", "bold")
-        .style("font-size", 20)
+        .style("font-size", plotWidth/36.5) //to make the font size responsive
+        console.log(plotWidth);
 
     // Create footer grouping
     const footer = svg.select("#footer");

@@ -59,21 +59,26 @@ function drawBarChartA(data, response) {
 
     // let filteredXTitle = [moduleVars[i]]
 
-    // svg.selectAll(".xTitle")
-    //     .data(moduleVars)
-    //     .enter()
-    //     .append("text")
-    //     .attr("class", "xTitle")
-    //     //.attr("transform", `translate(${margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10}, ${margin.top })`)
-    //     .attr("text-anchor", "start")
-    //     .attr("x", (d,i) => margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10)
-    //     .attr("y", margin.top)
-    //     .style("font-family", "sans-serif")
-    //     .style("font-size", 12)
-    //     //.text(d => Object.values(d));
-    //     .text(function(d) { 
-    //         return Object.values(d); 
-    //         })
+    if (response.direction === "up") {
+        svg.selectAll(".xTitle")
+            .data(moduleVars)
+            .enter()
+            .append("text")
+            .attr("class", "xTitle")
+            //.attr("transform", `translate(${margin.left + smallMultiplePadding +  smallMultipleWidth * i + 10}, ${margin.top })`)
+            .attr("text-anchor", "start")
+            .attr("x", (d,i) => margin.left + smallMultiplePadding +  smallMultipleWidth * i )
+            .attr("y", margin.top)
+            .style("font-family", "sans-serif")
+            .style("font-size", 12)
+            .style("opacity", 0)
+            .text(function(d) { 
+                return Object.values(d); 
+                })
+            .transition()
+            .duration(DURATION * 0.5)
+                .style("opacity", 1)
+        }
 
     /***************************************
     ***** Y AXIS, AXIS LABEL, GRIDLINE *****
