@@ -97,9 +97,9 @@ function svg_init() {
         //.attr("transform", `translate(0, ${plotHeight + margin.bottom + 10})`)
         .text(d => d.label)
         .attr("text-anchor", "middle")
-        .style("alignment-baseline", "bottom")
+        .style("alignment-baseline", "baseline")
         .attr("x", (0.5 * (plotWidth + margin.left)))
-        .attr("y", margin.top + plotHeight + margin.bottom - 3);
+        .attr("y", margin.top + plotHeight + margin.bottom - 5);
 
 
     /**************************************

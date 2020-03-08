@@ -72,7 +72,7 @@
 
 html,
 body {
-    width: 93%;
+    width: 95%;
     height: 100%;
     margin: auto;
     padding: 0;
@@ -86,7 +86,7 @@ body {
 
 #intro,
 #outro {
-    width: 42%;
+    width: 45%;
     height: auto;
     margin: auto;
     /*padding: 0px 200px 0px 200px;*/
@@ -146,13 +146,14 @@ https://pudding.cool/process/introducing-scrollama/ */
     opacity: 0;
     z-index: -1;
 
-    background-color: #F4F4F4;
-    /*border: 1px solid blue; */
+    background-color: #F4F4F4; 
+    /* border: 1px solid blue; */
 }
 
 .scroll__text {
     position: relative;
     padding: 0 1rem;
+    width: 36%;
     max-width: 30rem;
 }
 

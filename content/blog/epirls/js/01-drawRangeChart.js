@@ -55,7 +55,13 @@ function drawRangeChart(data, response) {
     svg.selectAll(".xLabel")
         .data([{"label": "Number of ad clicks"}])
         .text(d => d.label)
-        .style("font-size", plotWidth/50);
+        .style('font-size', function(d){
+            if (plotWidth > 700){
+                return "18px";
+            } else {
+                return plotWidth/60;
+            }
+        });
 
 
     let filteredXTitle = [moduleVars[i]]
@@ -119,7 +125,7 @@ function drawRangeChart(data, response) {
         .append("text")
         .text(function(d) {return d.label;})
         .attr("x", margin.left + smallMultiplePadding)
-        .attr("y", margin.top - 30)
+        .attr("y", margin.top - 25)
         .attr("text-anchor", "start")
         .attr("class", "chartTitle")
         .style("font-family", "sans-serif")
