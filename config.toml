@@ -23,7 +23,7 @@ relativeurls = true
   # Use custom.css for your custom styling
   style = "default"
   description = "Describe your website"
-  copyright = "&copy;Yuqi Liao - 2019"
+  copyright = "&copy;Yuqi Liao"
   sidebarAbout = [
     "Data and design enthusiast"
     ]
@@ -39,7 +39,7 @@ relativeurls = true
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  # email = "yuqi.liao@georgetown.edu"
+  email = "yuqi.liao@georgetown.edu"
 
   # Nav links in the side bar
   #[[params.navlinks]]
@@ -55,6 +55,10 @@ relativeurls = true
   name = "Blog"
   url = "blog/"
   home = true
+
+  [[params.navlinks]]
+  name = "Contact"
+  url = "contact/"
   
 
   [params.social]
