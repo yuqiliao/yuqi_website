@@ -92,6 +92,17 @@ body {
     /*padding: 0px 200px 0px 200px;*/
 }
 
+/*for small screens*/
+@media (max-width: 900px) {
+
+    #intro,
+    #outro {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /*padding: 0px 200px 0px 200px;*/
+    }
+  }
 
 /*****************************
 ***** SCROLLAMA SETTINGS *****
