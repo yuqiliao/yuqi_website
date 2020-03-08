@@ -310,8 +310,8 @@ function drawTwoBarsWithWaterFalls(data, response) {
         color:"#1C366B",
         x: xScale(537.5),
         y: yScale("Portugal"),
-        dy: -50,
-        dx: 100,
+        dy: -plotHeight/16*2.5,
+        dx: plotWidth/8,
         connector: {
           points: 1
         }
@@ -325,9 +325,17 @@ function drawTwoBarsWithWaterFalls(data, response) {
         .type(type)
         .annotations(annotationsNoClicks)
 
-
+    //console.log(plotWidth)
+    console.log(plotHeight)
     d3.select("#plot")
       .append("g")
+      .style('font-size', function(d){
+          if (plotWidth > 700){
+              return "16px";
+          } else {
+              return plotWidth/36.5;
+          }
+      })
       .call(makeAnnotationsNoClicks)
       .attr("opacity", 0)
       .transition()
@@ -354,8 +362,8 @@ function drawTwoBarsWithWaterFalls(data, response) {
         color:"#1DACE8",
         x: xScale(502.1),
         y: yScale("Abu Dhabi, UAE"),
-        dy: -50,
-        dx: 100 + (537.5 - 502.1),
+        dy: -plotHeight/16*2.5,
+        dx: xScale(537.5) - xScale(502.1) + plotWidth/8,
         connector: {
           points: 1
         }
@@ -371,6 +379,13 @@ function drawTwoBarsWithWaterFalls(data, response) {
     
     d3.select("#plot")
       .append("g")
+      .style('font-size', function(d){
+        if (plotWidth > 700){
+            return "16px";
+        } else {
+            return plotWidth/36.5;
+        }
+    })
       .call(makeAnnotationsYesClicks)
       .attr("opacity", 0)
       .transition()

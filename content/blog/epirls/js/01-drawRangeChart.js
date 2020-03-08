@@ -88,7 +88,9 @@ function drawRangeChart(data, response) {
         .attr("transform", `translate(${margin.left}, ${margin.top})`)
         .call(d3.axisLeft(yScale)
             .tickSize(5)
-            .tickPadding(5))
+            .tickPadding(5)
+            //.tickSizeOuter(0) //this is to hide the ticks at the bottom and top
+            )
         .style("text-anchor", "end")
         .style("alignment-baseline", "middle")
         //.style("font-weight", "bold")
@@ -123,7 +125,7 @@ function drawRangeChart(data, response) {
         .style("font-family", "sans-serif")
         .style("font-weight", "bold")
         .style("font-size", plotWidth/36.5) //to make the font size responsive
-        console.log(plotWidth);
+        //console.log(plotWidth);
 
     // Create footer grouping
     const footer = svg.select("#footer");

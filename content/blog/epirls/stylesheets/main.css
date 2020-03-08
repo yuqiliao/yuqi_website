@@ -81,7 +81,7 @@ body {
 
 body {
     /*min-height: 120px;*/
-    background: url(img/background-v2.png) repeat 0 0;
+    background: url(img/background-v3.png) repeat 0 0;
 }
 
 #intro,
@@ -146,7 +146,7 @@ https://pudding.cool/process/introducing-scrollama/ */
     opacity: 0;
     z-index: -1;
 
-    background-color: #E5C4A1;
+    background-color: #F4F4F4;
     /*border: 1px solid blue; */
 }
 
@@ -281,6 +281,12 @@ p {
     border: 1px solid black;
     background: black
 
+}
+
+.footnote{
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 10px;
 }
 
 /* hyperlinks */
