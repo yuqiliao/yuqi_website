@@ -194,8 +194,10 @@ function drawRangeChartB(data, response) {
                 
                 div.style("opacity", 1)
                     .html("<strong>Minimum</strong>: "+ d["Min"])
-                    .style("left", (xScale(d["Min"]) + 86) + "px")
-                    .style("top", (yScale(d[yGroup]) + yScale.bandwidth()/2) + "px")
+                    .style("transform", `translate(`
+                            + `calc( -50% + ${xScale(d["Min"]) + margin.left}px),`
+                            + `calc(-100% + ${yScale(d[yGroup]) - yScale.bandwidth()/4 + margin.top}px)`
+                            + `)`)
                 })              
             .on("mouseleave", function(d) { 
                 d3.select(this)
@@ -233,8 +235,10 @@ function drawRangeChartB(data, response) {
                 div.style("opacity", 1)
                     //.text([d["Max"]])
                     .html("<strong>Maximum</strong>: "+ d["Max"])
-                    .style("left", (xScale(d["Max"]) + 79) + "px")
-                    .style("top", (yScale(d[yGroup]) + yScale.bandwidth()/2) + "px")
+                    .style("transform", `translate(`
+                            + `calc( -50% + ${xScale(d["Max"]) + margin.left}px),`
+                            + `calc(-100% + ${yScale(d[yGroup]) - yScale.bandwidth()/4 + margin.top}px)`
+                            + `)`)
                 })              
             .on("mouseleave", function(d) { 
                 d3.select(this)

@@ -253,7 +253,8 @@ function drawBarChartA(data, response) {
 
 
         let filteredData = data.filter(d => d["Var"] === Object.keys(moduleVars[i])[0]);
-
+        let moduleName = Object.values(moduleVars[i]);
+        
         plot.selectAll(".rect".concat(i))
             .data(filteredData)
             .enter() 
@@ -278,9 +279,11 @@ function drawBarChartA(data, response) {
             
             div.style("opacity", 1)
                 //.text([d["Min"]])
-                .html(d3.format(".1f")(d["PCT"]) + "%")
-                .style("left", (xScale(d["PCT"]) + 142) + "px")
-                .style("top", (yScale(d[yGroup]) + 40) + "px")
+                .html(d3.format(".1f")(d["PCT"]) + "% of student <br />in " + d["IDCNTRY"] + "<br />clicked on ads during the <br />\"" + moduleName + "\" module")
+                    .style("transform", `translate(`
+                            + `calc( 0% + ${xScale(d["PCT"]) + margin.left + 10}px),`
+                            + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth()/2 + margin.top}px)`
+                            + `)`)
             })              
         .on("mouseleave", function(d) { 
             d3.select(this)

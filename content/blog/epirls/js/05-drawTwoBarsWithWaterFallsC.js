@@ -156,8 +156,10 @@ function drawTwoBarsWithWaterFallsC(data, response) {
         div.style("opacity", 0)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["Coef_startToLogout_noClick_min"]))
-            .style("left", (xScale(d["Coef_startToLogout_noClick_min"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["Coef_startToLogout_noClick_min"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + margin.top}px)`
+                    + `)`)
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
@@ -178,8 +180,10 @@ function drawTwoBarsWithWaterFallsC(data, response) {
         div.style("opacity", 0)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["Coef_startToLogout_yesClick_min"]))
-            .style("left", (xScale(d["Coef_startToLogout_yesClick_min"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["Coef_startToLogout_yesClick_min"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
@@ -201,14 +205,18 @@ function drawTwoBarsWithWaterFallsC(data, response) {
             if(d["Coef_startToLogout_gap_min"] < 0){
                 div.style("opacity", 1)
                     .html(d3.format(".1f")(Math.abs(d["Coef_startToLogout_gap_min"])))
-                    .style("left", (xScale(d["Coef_startToLogout_noClick_min"]) + 142) + "px")
-                    .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+                    .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["Coef_startToLogout_noClick_min"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
 
             } else {
                 div.style("opacity", 1)
                     .html(d3.format(".1f")(d["Coef_startToLogout_gap_min"]))
-                    .style("left", (xScale(d["Coef_startToLogout_yesClick_min"]) + 142) + "px")
-                    .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
+                    .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["Coef_startToLogout_yesClick_min"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + margin.top}px)`
+                    + `)`)
             }
             })            
         .on("mouseleave", function(d) { 

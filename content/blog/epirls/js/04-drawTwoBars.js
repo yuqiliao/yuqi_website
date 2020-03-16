@@ -35,7 +35,7 @@ function drawTwoBars(data, response) {
     ***********************/
 
     let xMin = 0;
-    let xMax = 50;
+    let xMax = 40;
     let yGroup = "IDCNTRY";
 
     let smallMultiplePadding = 30
@@ -161,8 +161,12 @@ function drawTwoBars(data, response) {
         
         div.style("opacity", 1)
             .html(d3.format(".1f")(d["PCT"]) + "%")
-            .style("left", (xScale(d["PCT"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["PCT"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + margin.top}px)`
+                    + `)`)
+            // .style("left", (xScale(d["PCT"]) + 142) + "px")
+            // .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
@@ -195,8 +199,12 @@ function drawTwoBars(data, response) {
         div.style("opacity", 1)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["PCT"]) + "%")
-            .style("left", (xScale(d["PCT"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["PCT"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
+            // .style("left", (xScale(d["PCT"]) + 142) + "px")
+            // .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)

@@ -458,7 +458,7 @@ a:hover { border-bottom: 1.5px dotted; }
 ***** CHART ELEMENTS *****
 *************************/
 
-/* Tick lines - transparent */
+/* Tick lines */
 .tick line,
 .domain {
     color: #000000;
@@ -517,7 +517,7 @@ a:hover { border-bottom: 1.5px dotted; }
 div.tooltipRangeChart {
     opacity: 0;
     position: absolute;
-    top: -12px;
+    top: 0;
     left: 0;
     padding: 0.6em 1em;
     background: #FFFFFF;
@@ -552,11 +552,11 @@ div.tooltipRangeChart:before {
 div.tooltipBarChart {
     opacity: 0;
     position: absolute;
-    top: -12px;
+    top: 0;
     left: 0;
     padding: 0.6em 1em;
     background: #FFFFFF;
-    text-align: center;
+    text-align: left;
     border: 1px solid #dddddd;
     z-index: 10;
     transition: all 0.2s ease-out;

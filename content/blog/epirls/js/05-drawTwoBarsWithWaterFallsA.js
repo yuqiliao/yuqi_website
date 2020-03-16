@@ -159,8 +159,10 @@ function drawTwoBarsWithWaterFallsA(data, response) {
             div.style("opacity", 0)
                 //.text([d["Min"]])
                 .html(d3.format(".1f")(d["MEAN.NO"]))
-                .style("left", (xScale(d["MEAN.NO"]) + 142) + "px")
-                .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
+                .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["MEAN.NO"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + margin.top}px)`
+                    + `)`)
             })              
         .on("mouseleave", function(d) { 
             d3.select(this)
@@ -194,8 +196,10 @@ function drawTwoBarsWithWaterFallsA(data, response) {
             div.style("opacity", 0)
                 //.text([d["Min"]])
                 .html(d3.format(".1f")(d["MEAN.YES"]))
-                .style("left", (xScale(d["MEAN.YES"]) + 142) + "px")
-                .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+                .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["MEAN.YES"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
             })              
         .on("mouseleave", function(d) { 
             d3.select(this)
@@ -239,8 +243,10 @@ function drawTwoBarsWithWaterFallsA(data, response) {
         div.style("opacity", 0)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["MEAN.NO"]))
-            .style("left", (xScale(d["MEAN.NO"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) - yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+            + `calc( 0% + ${xScale(d["MEAN.NO"]) + margin.left + 10}px),`
+            + `calc(-50% + ${yScale(d[yGroup]) + margin.top}px)`
+            + `)`)
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
@@ -261,8 +267,10 @@ function drawTwoBarsWithWaterFallsA(data, response) {
         div.style("opacity", 0)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["MEAN.YES"]))
-            .style("left", (xScale(d["MEAN.YES"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["MEAN.YES"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
@@ -310,8 +318,10 @@ function drawTwoBarsWithWaterFallsA(data, response) {
         div.style("opacity", 1)
             //.text([d["Min"]])
             .html(d3.format(".1f")(d["MEAN.GAP"]))
-            .style("left", (xScale(d["MEAN.NO"]) + 142) + "px")
-            .style("top", (yScale(d[yGroup]) + yScale.bandwidth()*0.4 + 38) + "px")
+            .style("transform", `translate(`
+                    + `calc( 0% + ${xScale(d["MEAN.NO"]) + margin.left + 10}px),`
+                    + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth() + margin.top}px)`
+                    + `)`)
         })              
     .on("mouseleave", function(d) { 
         d3.select(this)
