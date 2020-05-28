@@ -222,7 +222,7 @@ function drawTwoBars(data, response) {
 
     // chart title
     header.selectAll(".chartTitle")
-        .data([{"label": "Pecent of students who clicked on ads by gender and education system"}])
+        .data([{"label": "Percent of students who clicked on ads by gender and education system"}])
         .text(function(d) {return d.label;})
 
 

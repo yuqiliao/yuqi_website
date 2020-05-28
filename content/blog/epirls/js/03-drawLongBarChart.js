@@ -153,7 +153,7 @@ function drawLongBarChart(data, response) {
         
         div.style("opacity", 1)
             //.text([d["Min"]])
-            .html(d3.format(".1f")(d["PCT"]) + "% of student <br />in " + d["IDCNTRY"] + "<br />clicked on ads during<br />the ePIRLS assessment")
+            .html(d3.format(".1f")(d["PCT"]) + "% of students <br />in " + d["IDCNTRY"] + "<br />clicked on ads during<br />the ePIRLS assessment")
             .style("transform", `translate(`
                     + `calc( 0% + ${xScale(d["PCT"]) + margin.left + 10}px),`
                     + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth()/2 + margin.top}px)`
@@ -179,7 +179,7 @@ function drawLongBarChart(data, response) {
 
     // chart title
     header.selectAll(".chartTitle")
-        .data([{"label": "Pecent of students who clicked on ads by education system"}])
+        .data([{"label": "Percent of students who clicked on ads by education system"}])
         .text(function(d) {return d.label;})
 
 

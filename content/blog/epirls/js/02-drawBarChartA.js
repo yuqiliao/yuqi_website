@@ -25,7 +25,7 @@ function drawBarChartA(data, response) {
     /// draw most of the elements 5 times
     var moduleVars = [{"en11madz": "Mars"}, 
                       {"en11radz": "Rainforests"},
-                      {"en11badz": "Dr.Blackwell"},
+                      {"en11badz": "Dr. Blackwell"},
                       {"en11zadz": "Wildebeest Migration"}, 
                       {"en11tadz": "The Legend of Troy"}];
 
@@ -132,7 +132,7 @@ function drawBarChartA(data, response) {
 
     // chart title
     header.selectAll(".chartTitle")
-        .data([{"label": "Pecent of students who clicked on ads by education system and module"}])
+        .data([{"label": "Percent of students who clicked on ads by education system and module"}])
         //.enter()
         //.append("text")
         .text(function(d) {return d.label;})
@@ -279,7 +279,7 @@ function drawBarChartA(data, response) {
             
             div.style("opacity", 1)
                 //.text([d["Min"]])
-                .html(d3.format(".1f")(d["PCT"]) + "% of student <br />in " + d["IDCNTRY"] + "<br />clicked on ads during the <br />\"" + moduleName + "\" module")
+                .html(d3.format(".1f")(d["PCT"]) + "% of students <br />in " + d["IDCNTRY"] + "<br />clicked on ads during the <br />\"" + moduleName + "\" module")
                     .style("transform", `translate(`
                             + `calc( 0% + ${xScale(d["PCT"]) + margin.left + 10}px),`
                             + `calc(-50% + ${yScale(d[yGroup]) + yScale.bandwidth()/2 + margin.top}px)`
