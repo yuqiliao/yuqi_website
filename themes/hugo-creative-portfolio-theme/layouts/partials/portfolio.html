@@ -19,7 +19,16 @@
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                      
+                      <!-- I added the following if logic to enable referencing to external URL
+                      reference: https://discourse.gohugo.io/t/how-can-i-redirect-to-an-external-link-on-click-of-header-of-any-blog/9886/5
+                      reference2: https://blog.concannon.tech/tech-talk/hugo-canonical-url/-->
+                      {{ if .Params.affiliatelink }}
+                        <h4><a href="{{ .Params.affiliatelink }}">{{ .Title }}</a></h4>
+                        {{ else }}
+                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        {{ end }}
+                          
                           <div class="box-masonry-description">
                             <p>
                                 {{ if .Description }}
