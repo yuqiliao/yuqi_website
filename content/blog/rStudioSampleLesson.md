@@ -14,6 +14,7 @@ I prepared these materials as part of the requirement to become a [trainer certi
 - [Slides](https://animationr.netlify.app/)
 - [R Script](https://github.com/yuqiliao/RStudio_TeachingSample/blob/master/index_Script.R)
 - [Learner persona](https://github.com/yuqiliao/RStudio_TeachingSample/blob/master/Learner's%20personas.docx)
+- [Concept map](https://github.com/yuqiliao/RStudio_TeachingSample/blob/master/Concept%20map%20-%20Yuqi%20Liao.pptx)
 
 
 ![](/img/blog/epirlsTweetOriginal_c.gif)
