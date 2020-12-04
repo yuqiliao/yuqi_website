@@ -44,7 +44,7 @@ Shiny
 - Sample exam: [version 1](https://education.rstudio.com/blog/2020/10/example-shiny-exam/)
 
 ## Overall impression 
-I’ve enjoyed the training and certification process and would encourage anyone interested to try it out. I found the Instructor Training to be especially helpful and will apply what I learn to future teaching opportunities. I also find helpful a lot of high-quality open-source education materials (a great example is the [RStudio Education page](https://education.rstudio.com/learn/)) that RStudio offers to the R community. 
+I’ve enjoyed the training and certification process and would encourage anyone interested to try it out. I found the Instructor Training to be especially helpful and will apply what I learn to future teaching opportunities. I am also impressed to learn about a lot of high-quality open-source education materials (a great example is the [RStudio Education page](https://education.rstudio.com/learn/)) that RStudio offers to the R community. 
 
  
 
