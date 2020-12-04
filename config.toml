@@ -17,6 +17,8 @@ enableEmoji = true
 hasCJKLanguage = true
 relativeurls = true
 
+# default hyperlinks to open in new page (https://github.com/wowchemy/wowchemy-hugo-modules/issues/1379)
+hrefTargetBlank = true 
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
