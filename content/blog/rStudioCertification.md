@@ -36,15 +36,17 @@ The teaching exam is 90-minute that covers pedagogical techniques discussed in t
 Next, candidate need to pass technical exams to get certified. As of now, RStudio offers certification on the Tidyverse and Shiny, the exams are each 90-minute long. Candidates could choose to take either or both exams. I only took the Tidyverse exam and got its certification. Below are a few helpful exam prep resources. 
 
 Tidyverse 
+
 - Study material: [R for Data Science](https://r4ds.had.co.nz/) (required); [Advanced R](https://adv-r.hadley.nz/) (optional) 
 - Sample exams: [version 1](https://education.rstudio.com/blog/2020/02/instructor-certification-exams/#tidyverse-certification-exam), [version 2](https://education.rstudio.com/blog/2020/08/more-example-exams/#tidyverse-exam) 
 
 Shiny 
+
 - Study material: [Mastering Shiny](https://mastering-shiny.org/) (required)
 - Sample exam: [version 1](https://education.rstudio.com/blog/2020/10/example-shiny-exam/)
 
 ## Overall impression 
-I’ve enjoyed the training and certification process and would encourage anyone interested to try it out. I found the Instructor Training to be especially helpful and will apply what I learn to future teaching opportunities. I am also impressed to learn about a lot of high-quality open-source education materials (a great example is the [RStudio Education page](https://education.rstudio.com/learn/)) that RStudio offers to the R community. 
+I’ve enjoyed the training and certification process and would encourage anyone interested to try it out. I found the Instructor Training to be especially helpful and will apply what I learn to future teaching opportunities. I am also grateful to learn about many high-quality open-source education materials (a great example is the [RStudio Education page](https://education.rstudio.com/learn/)) that RStudio offers to the R community. Please feel free to reach out if you are interested in getting certified and would like to know more! 👾
 
  
 
