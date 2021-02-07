@@ -4,4 +4,6 @@
 .Ruserdata
 blogdown
 .DS_Store
-public/
+public/*
+#ignore everything in the public/ folder except the following
+!/public/.ht* 
