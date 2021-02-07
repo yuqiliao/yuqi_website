@@ -5,5 +5,3 @@
 blogdown
 .DS_Store
 public/*
-#ignore everything in the public/ folder except the following
-!/public/.ht* 
