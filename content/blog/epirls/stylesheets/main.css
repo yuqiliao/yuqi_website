@@ -82,11 +82,12 @@ body {
 
 body {
     /*min-height: 120px;*/
-    background: url(img/background-v3.png) repeat 0 0;
+    background: #F4F4F4;
 }
 
 #intro,
 #outro {
+    background-color: #F4F4F4;
     width: 45%;
     height: auto;
     margin: auto;
@@ -114,6 +115,7 @@ https://pudding.cool/process/introducing-scrollama/ */
 
 #scroll {
   position: relative;
+  background-color: #F4F4F4;
 }
 
 .scroll__graphic {
@@ -157,8 +159,6 @@ https://pudding.cool/process/introducing-scrollama/ */
 
     opacity: 0;
     z-index: -1;
-
-    background-color: #F4F4F4; 
     /* border: 1px solid blue; */
 }
 
