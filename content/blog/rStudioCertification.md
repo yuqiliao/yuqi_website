@@ -48,7 +48,5 @@ Next, candidates need to pass technical exams to get certified. As of now, RStud
 ## Overall impression 
 I’ve enjoyed the training and certification process and would encourage anyone interested to try it out. I found the Instructor Training to be especially helpful and will apply what I learn to future teaching opportunities. I am also grateful to learn about many high-quality open-source education materials (a great example is the [RStudio Education page](https://education.rstudio.com)) that RStudio offers to the R community. Please feel free to reach out if you are interested in getting certified and would like to know more! 👾
 
-this is a test to see if the the change dector can spot the difference. :)
-
  
 
