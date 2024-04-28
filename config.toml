@@ -27,7 +27,7 @@ relativeurls = true
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "default"
-  description = "Describe your website"
+  description = "Yuqi Liao's personal website"
   copyright = "&copy;Yuqi Liao"
   sidebarAbout = [
     "Data and design enthusiast"
