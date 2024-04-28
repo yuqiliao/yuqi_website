@@ -61,9 +61,9 @@ relativeurls = true
   url = "blog/"
   home = true
 
-  [[params.navlinks]]
-  name = "Contact"
-  url = "contact/"
+  # [[params.navlinks]]
+  # name = "Contact"
+  # url = "contact/"
   
 
   [params.social]
