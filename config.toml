@@ -5,7 +5,7 @@ languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "G-HN65SQQPXH"
+googleAnalytics = "G-HN65SQQPXH" ##I tried to edit the head.html partial file directly so this is more of a placeholder
 
 # Ignore certain files as recommended
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
