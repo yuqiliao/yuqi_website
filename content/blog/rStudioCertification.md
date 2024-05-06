@@ -8,7 +8,7 @@ image: img/blog/trainer_penguin_hexagon.png
 description: I was lucky to have been certified as an RStudio instructor in Tidyverse. I’d love to share my experience and what I’ve learned along the process, which I hope may be helpful to anyone interested in teaching R.
 ---
 
-12/03/2020
+2020-12-03
 
 I was lucky to have been certified as an [RStudio instructor in Tidyverse](https://education.rstudio.com/trainers/people/liao+yuqi) in October this year (thanks for the financial support from my organization). I’d love to share my experience and what I’ve learned along the process, which I hope may be helpful to anyone interested in teaching R.
 

@@ -7,6 +7,9 @@ highlight: true
 image: img/blog/points_edit.png
 showonlyimage: false
 ---
+
+2018-10-31
+
 If you have some footprints in Washington D.C. and are active on Instagram, chances are that you may have heard of, or are currently following, the Instagram account [@WeThePeopleDC](https://www.instagram.com/wethepeopledc/). As its name hints, the account runs on an interesting model: each day, the handle is held by a different person living or working in the nation’s capital. The idea is that the account followers get to see the district through the eyes of Washingtonians of all backgrounds.
 
 ## **Background**

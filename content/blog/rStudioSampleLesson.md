@@ -9,6 +9,8 @@ showonlyimage: false
 description: R teaching materials for creating animated visualizations
 ---
 
+2020-10-04
+
 I prepared these materials as part of the requirement to become a [trainer certified by RStudio](https://education.rstudio.com/trainers/). Feedback welcome!
 
 - [Slides](https://animationr.netlify.app/)
