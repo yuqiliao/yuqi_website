@@ -38,11 +38,11 @@ Following Connor's tutorial, I set up the code and began development. Along the 
 
 One notable development challenge was accurately plotting small jurisdictions on the rotating globe. The issue was that small jurisdictions (e.g., Caribbean island countries) represented by dots continued to appear on the rotating globe even when they were “behind the globe,” making the globe look very dizzy and messy, such as the following.
 
-{{< figure src="/img/blog/ssb-globe/rotating-globe-infinite-wrong.webp" width=50% >}}
+{{< figure src="/img/blog/ssb-globe/rotating-globe-infinite-wrong.webp" width="50%" >}}
 
 After many trials and errors, and inspired by the solution in [this post](https://learn-sims.org/geospatial/spinning-globe-with-point-markers-in-d3-js/), I solved it by implementing a custom function to adjust dot visibility based on their distance from the globe's center. With such an adjustment, the following globe rotates correctly!
 
-{{< figure src="/img/blog/ssb-globe/rotating-globe-infinite.webp" width=50%  >}}
+{{< figure src="/img/blog/ssb-globe/rotating-globe-infinite.webp" width="50%"  >}}
 
 #### Deployment
 
