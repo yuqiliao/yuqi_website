@@ -5,8 +5,9 @@ linktitle: SSB Tax Database
 title: Global Sugar-Sweetened Beverage Tax Database
 highlight: true
 image: img/blog/ssb-show-case/drink-icons.gif
-description: I had a blast in contributing to an online data visualization project on the topic of Global Sugar-Sweetened Beverage (SSB) Tax for the World Bank!
+description: Showcasing an online data visualization project on the topic of Global Sugar-Sweetened Beverage (SSB) Tax for the World Bank!
 ---
+2023-07-03
 
 I had a blast in contributing to an online data visualization project on the topic of Global Sugar-Sweetened Beverage (SSB) Tax for the World Bank! This project consists of an interactive landing page and three scrolly telling pieces, which offers a comprehensive view of SSB tax worldwide, empowering researchers, policymakers, and advocates to make informed decisions promoting healthier choices.
 
